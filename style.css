@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #e2e2e2;
+    font-family: 'Arial';
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+    padding: 16px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5em;
+    padding: 16px;
+}
+
+.blog {
+    padding: 0.5em;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.45);
+    border-radius: 4px;
+    transition: all 0.5s;
+    display: grid;
+    gap: 0.5em;
+}
+.blog:hover {
+    box-shadow: 0 0 12px 1px rgba(0, 0, 0, 0.45);
+
+}
+.blog p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.blog a {
+    font-size: 12px;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    color: rgb(95, 44, 44);
+}
+
+.blogDetail {
+    padding: 16px;
+}
+.blogDetail p {
+    font-size: 16px;
+    /* font-weight: 700; */
+    padding: 16px;
+}
+
+.admin {
+    padding: 1em;
+}
+
+.admin button {
+    padding: 0.5em;
+    border: 0;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.form-control {
+    display: grid;
+}
